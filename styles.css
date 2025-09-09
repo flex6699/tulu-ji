@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.landing-page {
+  text-align: center;
+  padding: 100px 0;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.welcome-message {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-out;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.apology-page,
+.come-back-page,
+.contact-page {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 2s forwards;
+}
+
+.apology-text,
+.come-back-text,
+.contact-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.8;
+  animation: slideIn 1s ease-out forwards;
+}
+
+.contact-text strong {
+  color: #007bff;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+audio {
+  display: none; /* Hide the audio player */
+}
+.poetic-line {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #6a1b9a; /* Deep purple or color of your choice */
+  margin-top: 30px;
+  text-align: center;
+}
+/* Shayari styles */
+.shayari-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.shayari-text {
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.landing-page {
+  /* Your landing page styles here */
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome-message {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.drop {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: fall 0.5s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
